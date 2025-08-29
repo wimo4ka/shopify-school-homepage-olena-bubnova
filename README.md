@@ -14,7 +14,7 @@ The project is fully responsive and optimized for **desktop, tablet, and mobile*
    git clone https://github.com/wimo4ka/shopify-school-homepage-olena-bubnova.git
 2. Open the project folder and run index.html in your browser.
 
-3. Alternatively, you can view the deployed version on GitHub Pages.
+3. Alternatively, you can view the deployed version on GitHub Pages <a href='https://wimo4ka.github.io/shopify-school-homepage-olena-bubnova/'>My project</a>. 
 
 ## 3. Technologies Used
 
