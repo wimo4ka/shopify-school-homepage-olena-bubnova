@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Olena Bubnova Test</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img class="logo" src="./media/images/nav-menu/logo.png" alt="Logo">
+      <button class="burger-menu" aria-label="menu" aria-expanded="false">
+          <span class="burger-line"></span>
+      </button>
+      <div class="nav-wrapper">
+        <ul class="nav-links">
+          <li><a class="nav-link body-text" href="#">New & Featured</a></li>
+          <li><a class="nav-link body-text" href="#">Men</a></li>
+          <li><a class="nav-link body-text" href="#">Women</a></li>
+          <li><a class="nav-link body-text" href="#">Kids</a></li>
+        </ul>
+      </div>
+      <a class="cart-link" href="#cart"><img class="cart-icon" src="./media/images/nav-menu/cart-icon.png" alt="Cart"></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-banner">
+      <div class="swiper hero-banner-swiper" aria-label="Hero image slider">
+      <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./media/images/hero-banner/slide-1-mob.png" media="(max-width: 768px)">
+              <img class="slide-image" src="./media/images/hero-banner/slide-1.png" alt="Slide image 1">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <img class="slide-image" src="./media/images/hero-banner/slide-2.png" alt="Slide image 2">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <img class="slide-image" src="./media/images/hero-banner/slide-3.png" alt="Slide image 3">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="hero-banner-text-wrapper">
+        <h1 class="hero-banner-header h1">More than just shoes — it’s a part of your story.</h1>
+        <p class="hero-banner-text body-text">Original sneakers from Nike and other top brands that make every step<br>feel special.</p>
+        <button class="hero-btn">Shop the Collection</button>
+      </div>
+    </section>
+    <section id="featureCollection" class="feature-collection m-p-tb-60 m-p-lr-16">
+      <h2 class="title h2">Featured Collection</h2>
+      <div class="swiper collection-swiper" aria-label="Featured collection slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="product-link" href="#featureCollection">
+              <img class="collection-image" src="./media/images/collection/image-1.png" alt="Nike Streakfly 2">
+            </a>
+            <h3 class="collection-title body-text">Nike Streakfly 2</h3>
+            <p class="collection-price body-text">$300.00</p>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="#featureCollection">
+              <img class="collection-image" src="./media/images/collection/image-2.png" alt="Nike Pegasus Premium">
+            </a>
+            <h3 class="collection-title">Nike Pegasus Premium</h3>
+            <p class="collection-price body-text">$350.00</p>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="#featureCollection">
+              <img class="collection-image" src="./media/images/collection/image-3.png" alt="Nike Pegasus 41">
+            </a>
+            <h3 class="collection-title body-text">Nike Pegasus 41</h3>
+            <p class="collection-price body-text">$280.00</p>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="#featureCollection">
+              <img class="collection-image" src="./media/images/collection/image-4.png" alt="Nike Revolution 7">
+            </a>
+            <h3 class="collection-title body-text">Nike Revolution 7</h3>
+            <p class="collection-price body-text">$440.00</p>
+          </div>
+          <div class="swiper-slide">
+            <a class="product-link" href="#featureCollection">
+              <img class="collection-image" src="./media/images/collection/image-5.png" alt="Nike Air Max Plus">
+            </a>
+            <h3 class="collection-title body-text">Nike Air Max Plus</h3>
+            <p class="collection-price body-text">$280.00</p>
+          </div>
+        </div>
+        <img class="swiper-button-next" src="./media/images/collection/arrow.png" alt="Next">
+        <img class="swiper-button-prev" src="./media/images/collection/arrow.png" alt="Prev">
+        </div>
+      </div>
+    </section>
+    <section class="faq m-p-tb-60 m-p-lr-16">
+      <h2 class="title h2">Frequently asked questions</h2>
+      <p class="subtitle body-text">Answers to our most frequently asked questions are just one click away.</p>
+      <div class="faq-accordion">
+        <details>
+          <summary class="body-text">What are Nike's delivery options?
+            <svg class="faq-accordion-plus" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.5 4.5V11.5M4 8H11M7.5 15C3.63401 15 0.5 11.866 0.5 8C0.5 4.13401 3.63401 1 7.5 1C11.366 1 14.5 4.13401 14.5 8C14.5 11.866 11.366 15 7.5 15Z"
+                stroke="#111111" />
+            </svg>
+            <svg class="faq-accordion-minus" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 8H11M7.5 15C3.63401 15 0.5 11.866 0.5 8C0.5 4.13401 3.63401 1 7.5 1C11.366 1 14.5 4.13401 14.5 8C14.5 11.866 11.366 15 7.5 15Z"
+                stroke="#111111" />
+            </svg>
+          </summary class="body-text">
+          <p class="accordion-description body-text">Exercitation cillum qui nisi nostrud Lorem aute amet aliquip tempor nostrud.</p>
+        </details>
+
+        <details open>
+          <summary class="body-text">What is Nike's returns policy?
+            <svg class="faq-accordion-plus" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.5 4.5V11.5M4 8H11M7.5 15C3.63401 15 0.5 11.866 0.5 8C0.5 4.13401 3.63401 1 7.5 1C11.366 1 14.5 4.13401 14.5 8C14.5 11.866 11.366 15 7.5 15Z"
+                stroke="#111111" />
+            </svg>
+            <svg class="faq-accordion-minus" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 8H11M7.5 15C3.63401 15 0.5 11.866 0.5 8C0.5 4.13401 3.63401 1 7.5 1C11.366 1 14.5 4.13401 14.5 8C14.5 11.866 11.366 15 7.5 15Z"
+                stroke="#111111" />
+            </svg>
+          </summary class="body-text">
+          <p class="accordion-description body-text">When you shop Nike online, either in the Nike App or on Nike.com, you can return items that are unworn and unwashed and still have their product tags attached within 30 days of purchase (some exceptions apply). That includes custom Nike By You sneakers.</p>
+        </details>
+
+        <details>
+          <summary class="body-text">Where is my Nike order?
+            <svg class="faq-accordion-plus" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.5 4.5V11.5M4 8H11M7.5 15C3.63401 15 0.5 11.866 0.5 8C0.5 4.13401 3.63401 1 7.5 1C11.366 1 14.5 4.13401 14.5 8C14.5 11.866 11.366 15 7.5 15Z"
+                stroke="#111111" />
+            </svg>
+            <svg class="faq-accordion-minus" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 8H11M7.5 15C3.63401 15 0.5 11.866 0.5 8C0.5 4.13401 3.63401 1 7.5 1C11.366 1 14.5 4.13401 14.5 8C14.5 11.866 11.366 15 7.5 15Z"
+                stroke="#111111" />
+            </svg>
+          </summary class="body-text">
+          <p class="accordion-description body-text">Exercitation cillum qui nisi nostrud Lorem aute amet aliquip tempor nostrud.</p>
+        </details>
+
+        <details>
+          <summary class="body-text">How do I find the right size and fit?
+            <svg class="faq-accordion-plus" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.5 4.5V11.5M4 8H11M7.5 15C3.63401 15 0.5 11.866 0.5 8C0.5 4.13401 3.63401 1 7.5 1C11.366 1 14.5 4.13401 14.5 8C14.5 11.866 11.366 15 7.5 15Z"
+                stroke="#111111" />
+            </svg>
+            <svg class="faq-accordion-minus" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 8H11M7.5 15C3.63401 15 0.5 11.866 0.5 8C0.5 4.13401 3.63401 1 7.5 1C11.366 1 14.5 4.13401 14.5 8C14.5 11.866 11.366 15 7.5 15Z"
+                stroke="#111111" />
+            </svg>
+          </summary class="body-text">
+          <p class="accordion-description body-text">Exercitation cillum qui nisi nostrud Lorem aute amet aliquip tempor nostrud.</p>
+        </details>
+      </div>
+    </section>
+    <section class="product-cards m-p-tb-60 m-p-lr-16">
+      <div class="container">
+        <div class="product-card">
+          <div class="product-thumbs">
+            <div class="product-gallery" data-color="pink"></div>
+            <div class="main-image-wrapper">
+              <div class="badge">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 13.0721L7.11574 14.6666L7.66671 11.2895L5.33337 8.89805L8.55789 8.40571L10 5.33325L11.4422 8.40571L14.6667 8.89805L12.3334 11.2895L12.8843 14.6666L10 13.0721Z" fill="#111111" stroke="#111111" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="badge-text">highly rated</span>
+              </div>
+              <img src="" alt="">
+            </div>
+          </div>
+          <div class="product-info">
+            <div>
+              <h2 class="product-title h2"></h2>
+              <p class="product-price body-text"></p>
+            </div>
+            <div class="color-items">
+              <button class="color-button" data-color="black" aria-label="black"></button>
+              <button class="color-button" data-color="white" aria-label="white"></button>
+              <button class="color-button" data-color="pink" aria-label="pink"></button>
+            </div>
+            <div class="size-options">
+              <p>Select size:</p>
+              <div class="grid">
+                <button class="size-button" data-size="UK 5.5">UK 5.5</button>
+                <button class="size-button" data-size="UK 6(EU 39)">UK 6 (EU 39)</button>
+                <button class="size-button" data-size="UK 6 (EU 40)">UK 6 (EU 40)</button>
+                <button class="size-button" data-size="UK 6.5">UK 6.5</button>
+                <button class="size-button" data-size="UK 7">UK 7</button>
+                <button class="size-button" data-size="UK 7.5">UK 7.5</button>
+              </div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+            <p class="product-description"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="need-help m-p-tb-60 m-p-lr-16">
+        <h2 class="title h2">Need help?</h2>
+        <form class="need-help-form">
+          <div class="grid-wrapper">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Enter Name" required>
+            </div>
+            <div class="form-group">
+              <label for="number">Number</label>
+              <input id="number" type="text" placeholder="Enter Number" required>
+            </div>
+
+            <div class="form-group one-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="form-group one-row">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Enter Message" required></textarea>
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer m-p-tb-60 m-p-lr-16">
+    <div>
+      <div class="footer-wrapper">
+        <div class="footer-column">
+            <button 
+              type="button" 
+              class="footer-button"
+              aria-expanded="true"
+              aria-controls="footer-col-resources">
+              <span class="footer-title">Resources</span>
+              <img src="./media/images/footer/arrow.png" alt="Arrow icon" class="icon" aria-hidden="true" loading="lazy">
+            </button>
+            <ul id="footer-col-resources" class="footer-col-list">
+              <li class="footer-item"><a href="#" class="footer-link">Find a Store</a></li>
+              <li class="footer-item"><a href="#" class="footer-link">Nike Journal</a></li>
+              <li class="footer-item"><a href="#" class="footer-link">Become a Member</a></li>
+              <li class="footer-item"><a href="#" class="footer-link">Feedback</a></li>
+              <li class="footer-item"><a href="#" class="footer-link">Promo Codes</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <button 
+              type="button" 
+              class="footer-button"
+              aria-expanded="true"
+              aria-controls="footer-col-help">
+              <span class="footer-title">Help</span>
+              <img src="./media/images/footer/arrow.png" alt="Arrow icon" class="icon" aria-hidden="true" loading="lazy">
+            </button>
+            <ul id="footer-col-help" class="footer-col-list">
+                <li class="footer-item"><a href="#" class="footer-link">Get Help</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Order Status</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Shipping and Delivery</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Returns</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Payment Options</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <button 
+              type="button" 
+              class="footer-button"
+              aria-expanded="true"
+              aria-controls="footer-col-about-nike">
+                <span class="footer-title">Company</span>
+                <img src="./media/images/footer/arrow.png" alt="Arrow icon" class="icon" aria-hidden="true" loading="lazy">
+            </button>
+            <ul id="footer-col-about-nike" class="footer-col-list">
+                <li class="footer-item"><a href="#" class="footer-link">About Nike</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">News</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Careers</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Investors</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Sustainability</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <button 
+              type="button" 
+              class="footer-button"
+              aria-expanded="true"
+              aria-controls="footer-col-menu">
+                <span class="footer-title">Menu</span>
+                <img src="./media/images/footer/arrow.png" alt="Arrow icon" class="icon" aria-hidden="true" loading="lazy">
+            </button>
+            <ul id="footer-col-menu" class="footer-col-list">
+                <li class="footer-item"><a href="#" class="footer-link">New & Featured</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Men</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Women</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Kids</a></li>
+            </ul>
+        </div>
+      </div>
+      <ul class="footer-policies">
+        <li class="copyright-content">© 2025 Stellar Soft, All rights reserved</li>
+        <li><a href="#" class="footer-link">Terms of Use</a></li>
+        <li><a href="#" class="footer-link">Privacy & Cookie Policy</a></li>
+        <li><a href="#" class="footer-link">Privacy & Cookie Setting</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="popup-overlay">
+    <div class="popup">
+      <button class="popup-close">
+        <img class="close-icon" src="./media/images/popup/close-icon.png" alt="Close button">
+      </button>
+      <div class="popup-text-wrapper">
+        <h1 class="popup-header h1">Here’s $10 Off Your First Order</h1>
+        <p class="popup-description body-text">Join our newsletter and get a $10 discount code sent straight to your inbox. New customers only.</p>
+        <form class="popup-form">
+          <label for="email">Email</label>
+          <input type="email" class="popup-email" placeholder="Enter Email" required>
+          <button type="submit" class="popup-submit-button">Send</button>
+        </form>
+      </div>
+      <img class="popup-image" src="./media/images/popup/popup-image.png" alt="Image">
+    </div>
+  </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

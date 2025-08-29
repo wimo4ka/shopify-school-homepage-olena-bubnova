@@ -1,0 +1,11 @@
+.idea/
+.idea
+node_modules
+npm-debug.log
+.vscode/*
+.vscode/settings.json
+.vscode/launch.json
+.DS_Store
+.gitkeep
+build/
+*.zip
